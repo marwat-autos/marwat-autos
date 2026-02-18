@@ -3,17 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marwat Autos - Bike Customization & Spare Parts in Dera Ismail Khan</title>
-    <!-- SEO META TAGS FOR GOOGLE -->
-    <meta name="description" content="Marwat Autos - Premium Bike Customization, Spare Parts & Accessories in Dera Ismail Khan. Best bike decoration, LED lights, stickers, engine parts in Pakistan. Call 0316-5356379">
-    <meta name="keywords" content="bike customization, spare parts, bike accessories, Dera Ismail Khan, motorcycle decoration, LED lights, bike stickers, engine parts, Pakistan, bike shop">
+    <title>Marwat Autos - Premium Bike Lights & Accessories in Dera Ismail Khan</title>
+    <!-- SEO META TAGS -->
+    <meta name="description" content="Marwat Autos - Specialists in bike LED lights, back brake lights, headlights, and accessories in Dera Ismail Khan. Unique designs including AK47, Skull, Eyes, Imran Khan, and Batman styles.">
+    <meta name="keywords" content="bike lights, back brake lights, LED headlights, bike accessories, Dera Ismail Khan, motorcycle decoration, AK47 bike light, skull light, batman headlight">
     <meta name="author" content="Marwat Autos">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Marwat Autos - Bike Customization & Spare Parts">
-    <meta property="og:description" content="Premium bike services in Dera Ismail Khan">
-    <meta property="og:image" content="https://www.shutterstock.com/image-vector/heavy-motorcycle-sports-illustration-helmet-260nw-2027444843.jpg">
-    <meta property="og:url" content="https://marwat-autos.github.io/marwat-autos/">
-    <meta property="og:type" content="website">
     
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -344,68 +339,11 @@
             margin-top: 40px;
         }
 
-        /* SERVICES SECTION */
-        #services {
+        /* ABOUT SECTION */
+        #about {
             background-color: var(--light);
         }
 
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            transition: var(--transition);
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .service-img {
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .service-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .service-card:hover .service-img img {
-            transform: scale(1.05);
-        }
-
-        .service-content {
-            padding: 25px;
-        }
-
-        .service-content h3 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-            color: var(--primary);
-        }
-
-        .service-content p {
-            color: var(--gray);
-            margin-bottom: 15px;
-        }
-
-        .service-icon {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-
-        /* ABOUT SECTION */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -446,95 +384,18 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
-        /* PRODUCTS SECTION */
+        /* PRODUCTS SECTION (HIDDEN) */
         #products {
             background-color: var(--light);
+            display: none;
         }
 
-        .products-filter {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 40px;
-        }
-
-        .filter-btn {
-            padding: 8px 20px;
-            background-color: white;
-            border: 2px solid var(--gray-light);
-            border-radius: 30px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .filter-btn.active, .filter-btn:hover {
-            background-color: var(--primary);
-            border-color: var(--primary);
-            color: white;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .product-card {
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: var(--transition);
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        .product-img {
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .product-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .product-card:hover .product-img img {
-            transform: scale(1.05);
-        }
-
-        .product-content {
-            padding: 20px;
-        }
-
-        .product-category {
-            display: inline-block;
-            padding: 4px 12px;
-            background-color: var(--secondary);
-            border-radius: 30px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            margin-bottom: 10px;
-        }
-
-        .product-content h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        /* CATALOG GRID STYLES - FIXED */
+        /* CATALOG GRID STYLES */
         .catalog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 30px;
-            margin-top: 40px;
+            margin-top: 30px;
         }
 
         .catalog-item {
@@ -556,37 +417,78 @@
 
         .catalog-item img {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
             border-radius: 5px;
             margin-bottom: 15px;
         }
 
         .catalog-item h3 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 10px;
             color: var(--dark);
-            flex-grow: 0;
         }
 
-        .catalog-item .price {
-            color: var(--primary);
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin: 10px 0;
-            flex-grow: 0;
-        }
-
-        .catalog-item .description {
-            color: var(--gray);
-            margin-bottom: 15px;
-            font-size: 0.9rem;
-            line-height: 1.4;
+        .catalog-item .features-list {
+            text-align: left;
+            margin: 15px 0;
             flex-grow: 1;
         }
 
+        .catalog-item .features-list li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        .catalog-item .features-list i {
+            color: var(--secondary);
+            font-size: 1rem;
+        }
+
         .catalog-item .btn {
-            margin-top: auto;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        /* Category Headers */
+        .category-header {
+            margin: 50px 0 20px;
+            padding: 15px 0;
+            border-bottom: 3px solid var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .category-header h3 {
+            font-size: 1.8rem;
+            color: var(--dark);
+        }
+
+        .category-badge {
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .subcategory-header {
+            margin: 40px 0 20px;
+            padding-left: 15px;
+            border-left: 5px solid var(--secondary);
+        }
+
+        .subcategory-header h4 {
+            font-size: 1.4rem;
+            color: var(--dark);
         }
 
         /* CONTACT SECTION */
@@ -635,17 +537,20 @@
             display: flex;
             gap: 15px;
             margin-top: 30px;
+            flex-wrap: wrap;
         }
 
         .social-link {
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             background-color: var(--light);
             display: flex;
             align-items: center;
             justify-content: center;
             transition: var(--transition);
+            color: var(--dark);
+            font-size: 1.3rem;
         }
 
         .social-link:hover {
@@ -854,7 +759,12 @@
             }
 
             .catalog-grid {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .category-header {
+                flex-direction: column;
+                align-items: flex-start;
             }
         }
 
@@ -881,15 +791,13 @@
     <!-- HEADER -->
     <header id="header">
         <div id="logo">
-            <img src="https://i.ibb.co/prdwS6vK/Marwat-Logo-final.png" alt="Marwat-Logo-final">  
+            <img src="https://i.ibb.co/prdwS6vK/Marwat-Logo-final.png" alt="Marwat-Logo-final"> 
             <div id="logo-text">Marwat <span>Autos</span></div>
         </div>
 
         <nav id="nav">
             <a href="#home" class="nav-link">Home</a>
-            <a href="#services" class="nav-link">Services</a>
             <a href="#about" class="nav-link">About Us</a>
-            <a href="#products" class="nav-link">Products</a>
             <a href="#catalog" class="nav-link">Items for Sale</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
@@ -905,7 +813,7 @@
     </header>
 
     <!-- FLOATING WHATSAPP BUTTON -->
-    <a href="https://wa.me/923165356379?text=Hello%20Marwat%20Autos,%20I%20need%20information%20about%20bike%20services" 
+    <a href="https://wa.me/923165356379?text=Hello%20Marwat%20Autos,%20I%20need%20information%20about%20your%20premium%20bike%20lights" 
        class="whatsapp-float" 
        target="_blank"
        title="Chat on WhatsApp">
@@ -918,58 +826,9 @@
             <h1>Premium Bike Customization & <span class="hero-highlight">Spare Parts</span></h1>
             <p>At Marwat Autos, we believe a bike is not just a ride — it's a reflection of your personality, passion, and pride. We specialize in premium bike decoration, customization, and genuine spare parts, all under one roof.</p>
             <div class="hero-buttons">
-                <a href="#services" class="btn">Our Services</a>
+                <a href="#about" class="btn">About Us</a>
                 <a href="#catalog" class="btn btn-secondary">View Items for Sale</a>
                 <a href="#contact" class="btn">Contact Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES SECTION -->
-    <section id="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Services</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Bike Customization">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="ri-paint-brush-line"></i>
-                        </div>
-                        <h3>Bike Customization</h3>
-                        <p>Transform your bike with our expert customization services. From stylish stickers, decals, LED lights to chrome accessories.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://www.spareparts.live/wp-content/uploads/lagers-1024x469.jpg" alt="Spare Parts">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="ri-tools-line"></i>
-                        </div>
-                        <h3>Genuine Spare Parts</h3>
-                        <p>High-quality bike spare parts to ensure your bike stays smooth, safe, and powerful on every ride.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4fmhe5aT0ApjsmCDR-5v4IpSmXreo_BzdEA&s" alt="Bike Accessories Installation">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="ri-settings-5-line"></i>
-                        </div>
-                        <h3>Accessories Installation</h3>
-                        <p>Professional installation of indicators, mirrors, seat covers, and other premium accessories for your bike.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -981,7 +840,7 @@
                 <div class="about-text">
                     <h2>About Marwat Autos</h2>
                     <p>Located in Dera Ismail Khan, we proudly serve bike lovers who want something extra for their ride. Every bike that comes to us is treated with attention to detail, because your trust matters to us.</p>
-                    <p>Whether you want a simple, clean look or a fully customized, head-turning design, our skilled team brings your vision to life with precision and care.</p>
+                    <p>Whether you want a simple, clean look or a fully customized, head-turning design with unique LED lights, our skilled team brings your vision to life with precision and care.</p>
                     
                     <div class="about-features">
                         <div class="feature">
@@ -1022,88 +881,7 @@
         </div>
     </section>
 
-    <!-- PRODUCTS SECTION -->
-    <section id="products">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Products</h2>
-            </div>
-            <div class="products-filter">
-                <button class="filter-btn active" data-filter="all">All Products</button>
-                <button class="filter-btn" data-filter="accessories">Accessories</button>
-                <button class="filter-btn" data-filter="spare-parts">Spare Parts</button>
-                <button class="filter-btn" data-filter="decoration">Decoration</button>
-            </div>
-            <div class="products-grid">
-                <div class="product-card" data-category="accessories">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="LED Lights">
-                    </div>
-                    <div class="product-content">
-                        <span class="product-category">Accessories</span>
-                        <h3>LED Lights Kit</h3>
-                        <p>Premium LED light kits for bikes with multiple color options and remote control.</p>
-                        <a href="https://wa.me/923165356379?text=I%20want%20to%20buy%20LED%20Lights%20Kit" 
-                           class="btn btn-whatsapp" 
-                           style="width: 100%; margin-top: 10px;">
-                            <i class="ri-whatsapp-line"></i> Buy on WhatsApp
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-category="spare-parts">
-                    <div class="product-img">
-                        <img src="https://t4.ftcdn.net/jpg/02/58/95/41/360_F_258954135_TAjOL99tceCUQ4of5nAFACAY4u8fiRE1.jpg" alt="Bike Engine Parts">
-                    </div>
-                    <div class="product-content">
-                        <span class="product-category">Spare Parts</span>
-                        <h3>Engine Components</h3>
-                        <p>High-quality engine parts and components for various bike models.</p>
-                        <a href="https://wa.me/923165356379?text=I%20want%20to%20buy%20Engine%20Components" 
-                           class="btn btn-whatsapp" 
-                           style="width: 100%; margin-top: 10px;">
-                            <i class="ri-whatsapp-line"></i> Buy on WhatsApp
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-category="decoration">
-                    <div class="product-img">
-                        <img src="https://ae01.alicdn.com/kf/Sa2114a3ead0f44c0be7f52f5ea6da9068.jpg" alt="Bike Stickers">
-                    </div>
-                    <div class="product-content">
-                        <span class="product-category">Decoration</span>
-                        <h3>Custom Stickers & Decals</h3>
-                        <p>Durable, weather-resistant stickers and decals for bike customization.</p>
-                        <a href="https://wa.me/923165356379?text=I%20want%20to%20buy%20Custom%20Stickers%20%26%20Decals" 
-                           class="btn btn-whatsapp" 
-                           style="width: 100%; margin-top: 10px;">
-                            <i class="ri-whatsapp-line"></i> Buy on WhatsApp
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-category="accessories">
-                    <div class="product-img">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg5Td8U2RPVglJ4ZMHAM9JmEfJ7InqM1l-ww&s" alt="Bike Handlebar Accessories">
-                    </div>
-                    <div class="product-content">
-                        <span class="product-category">Accessories</span>
-                        <h3>Handlebar Grips & Mirrors</h3>
-                        <p>Premium handlebar grips and adjustable mirrors for comfort and safety.</p>
-                        <a href="https://wa.me/923165356379?text=I%20want%20to%20buy%20Handlebar%20Grips%20%26%20Mirrors" 
-                           class="btn btn-whatsapp" 
-                           style="width: 100%; margin-top: 10px;">
-                            <i class="ri-whatsapp-line"></i> Buy on WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ITEMS FOR SALE CATALOG - FIXED WITH ALL PICTURES
-         <!-- ITEMS FOR SALE CATALOG -->
+    <!-- ITEMS FOR SALE CATALOG - COMPLETE UPDATED VERSION -->
     <section id="catalog" style="background-color: var(--light);">
         <div class="container">
             <div class="section-title">
@@ -1111,101 +889,946 @@
                 <p>WhatsApp us to order any item - Delivery available in Dera Ismail Khan</p>
             </div>
             
+            <!-- BACK BRAKE LIGHTS CATEGORY (KEEPING YOUR EXISTING ITEMS) -->
+            <div class="category-header">
+                <h3>🔴 Back Brake Lights</h3>
+                <span class="category-badge">LED Animated</span>
+            </div>
+            
+            <!-- Subcategory: Animated/Lighting Brake Lights -->
+            <div class="subcategory-header">
+                <h4>✨ Animated LED Brake Lights</h4>
+            </div>
+            
             <div class="catalog-grid">
-                <!-- ITEM 1 - LED LIGHT -->
+                <!-- AK47 Back Light -->
                 <div class="catalog-item">
-                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                         alt="LED Light Kit for Bike">
-                    <h3>LED Light Kit (Multi-Color)</h3>
-                    <p class="price">Rs. 2,500</p>
-                    <p class="description">Premium LED light kit with remote control, multiple colors, waterproof</p>
-                    <a href="https://wa.me/923165356379?text=I%20want%20to%20buy%20LED%20Light%20Kit%20for%20Rs.%202500" 
-                       class="btn btn-whatsapp" 
-                       style="width: 100%;">
-                        <i class="ri-whatsapp-line"></i> Buy Now on WhatsApp
+                    <img src="https://image2url.com/r2/default/images/1771407454809-818f9c54-72fd-4c49-9e06-f6ec21e060ec.jpeg" alt="AK47 Back Brake Light">
+                    <h3>AK47 Back Brake Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Dynamic AK47 firing animation</li>
+                        <li><i class="ri-color-filter-line"></i> Multiple color changing patterns</li>
+                        <li><i class="ri-water-flash-line"></i> Fully waterproof design</li>
+                        <li><i class="ri-movie-line"></i> Eye-catching LED effects</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20AK47%20Back%20Brake%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
                     </a>
                 </div>
-                
-                <!-- ITEM 2 - BIKE MIRRORS -->
+
+                <!-- Eyes Back Light -->
                 <div class="catalog-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg5Td8U2RPVglJ4ZMHAM9JmEfJ7InqM1l-ww&s" 
-                         alt="Bike Mirrors">
-                    <h3>Chrome Bike Mirrors</h3>
-                    <p class="price">Rs. 800</p>
-                    <p class="description">Premium chrome mirrors, adjustable arms, durable design</p>
-                    <a href="https://wa.me/923165356379?text=I%20want%20to%20buy%20Chrome%20Bike%20Mirrors%20for%20Rs.%20800" 
-                       class="btn btn-whatsapp" 
-                       style="width: 100%;">
-                        <i class="ri-whatsapp-line"></i> Buy Now on WhatsApp
+                    <img src="https://image2url.com/r2/default/images/1771407608917-96e6c60c-9ed7-46d3-a3af-3e5424039050.jpeg" alt="Eyes Back Brake Light">
+                    <h3>Eyes Back Brake Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Eyes blink in different colors</li>
+                        <li><i class="ri-color-filter-line"></i> Multi-color changing effect</li>
+                        <li><i class="ri-water-flash-line"></i> Weather resistant</li>
+                        <li><i class="ri-movie-line"></i> Animated eye movements</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Eyes%20Back%20Brake%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
                     </a>
                 </div>
-                
-                <!-- ITEM 3 - BIKE CHAIN -->
+
+                <!-- Skull with Eyes (First) -->
                 <div class="catalog-item">
-                    <img src="https://t4.ftcdn.net/jpg/02/58/95/41/360_F_258954135_TAjOL99tceCUQ4of5nAFACAY4u8fiRE1.jpg" 
-                         alt="Bike Chain Set">
-                    <h3>Bike Chain Set</h3>
-                    <p class="price">Rs. 1,200</p>
-                    <p class="description">High-quality chain set for all bike models, durable and smooth</p>
-                    <a href="https://wa.me/923165356379?text=I%20want%20to%20buy%20Bike%20Chain%20Set%20for%20Rs.%201200" 
-                       class="btn btn-whatsapp" 
-                       style="width: 100%;">
-                        <i class="ri-whatsapp-line"></i> Buy Now on WhatsApp
+                    <img src="https://image2url.com/r2/default/images/1771407694923-34d86e3d-aa86-4788-b043-53c50af1e2e1.jpeg" alt="Skull Back Brake Light">
+                    <h3>Skull Back Brake Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Skull design with blinking eyes</li>
+                        <li><i class="ri-color-filter-line"></i> Eyes show different colors</li>
+                        <li><i class="ri-collage-line"></i> Side lights with dual colors</li>
+                        <li><i class="ri-movie-line"></i> Complete animated effect</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Skull%20Back%20Brake%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
                     </a>
                 </div>
-                
-                <!-- ITEM 4 - HANDLE GRIPS -->
+
+                <!-- Skull with Eyes (Second) -->
                 <div class="catalog-item">
-                    <img src="https://ae01.alicdn.com/kf/Sa2114a3ead0f44c0be7f52f5ea6da9068.jpg" 
-                         alt="Bike Handle Grips">
-                    <h3>Premium Handle Grips</h3>
-                    <p class="price">Rs. 600</p>
-                    <p class="description">Comfortable rubber grips, anti-slip design, easy installation</p>
-                    <a href="https://wa.me/923165356379?text=I%20want%20to%20buy%20Premium%20Handle%20Grips%20for%20Rs.%20600" 
-                       class="btn btn-whatsapp" 
-                       style="width: 100%;">
-                        <i class="ri-whatsapp-line"></i> Buy Now on WhatsApp
+                    <img src="https://image2url.com/r2/default/images/1771408025775-d383549e-7e35-4051-b61f-0a211585736f.jpeg" alt="Premium Skull Back Light">
+                    <h3>Premium Skull Back Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Detailed skull design</li>
+                        <li><i class="ri-color-filter-line"></i> Multi-color blinking eyes</li>
+                        <li><i class="ri-collage-line"></i> Dual-color side illumination</li>
+                        <li><i class="ri-movie-line"></i> Synchronized animation</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Premium%20Skull%20Back%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
                     </a>
                 </div>
-                
-                <!-- ITEM 5 - SEAT COVER -->
+
+                <!-- Imran Khan Light 1 -->
                 <div class="catalog-item">
-                    <img src="https://images.unsplash.com/photo-1581101767113-1677dccc0c0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
-                         alt="Bike Seat Cover">
-                    <h3>Premium Seat Cover</h3>
-                    <p class="price">Rs. 900</p>
-                    <p class="description">Waterproof seat cover, comfortable foam, stylish design</p>
-                    <a href="https://wa.me/923165356379?text=I%20want%20to%20buy%20Premium%20Seat%20Cover%20for%20Rs.%20900" 
-                       class="btn btn-whatsapp" 
-                       style="width: 100%;">
-                        <i class="ri-whatsapp-line"></i> Buy Now on WhatsApp
+                    <img src="https://image2url.com/r2/default/images/1771407786536-256d6a95-d91c-4487-bb42-fbbf3ff57a34.jpeg" alt="Imran Khan Back Light">
+                    <h3>Imran Khan Back Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Featuring Imran Khan picture</li>
+                        <li><i class="ri-color-filter-line"></i> Multi-color changing effects</li>
+                        <li><i class="ri-movie-line"></i> Animated background</li>
+                        <li><i class="ri-water-flash-line"></i> Premium quality build</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Imran%20Khan%20Back%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
                     </a>
                 </div>
-                
-                <!-- ITEM 6 - ENGINE OIL -->
+
+                <!-- Imran Khan Light 2 -->
                 <div class="catalog-item">
-                    <img src="https://images.unsplash.com/photo-1598554747437-7d2357fdf7f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
-                         alt="Engine Oil">
-                    <h3>Premium Engine Oil</h3>
-                    <p class="price">Rs. 1,000</p>
-                    <p class="description">High-quality engine oil for better performance and protection</p>
-                    <a href="https://wa.me/923165356379?text=I%20want%20to%20buy%20Premium%20Engine%20Oil%20for%20Rs.%201000" 
-                       class="btn btn-whatsapp" 
-                       style="width: 100%;">
-                        <i class="ri-whatsapp-line"></i> Buy Now on WhatsApp
+                    <img src="https://image2url.com/r2/default/images/1771407848122-76d857f1-cfd5-4e88-9903-09645f8ecf10.jpeg" alt="Imran Khan Back Light">
+                    <h3>Imran Khan LED Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> IK portrait with effects</li>
+                        <li><i class="ri-color-filter-line"></i> Multiple color options</li>
+                        <li><i class="ri-movie-line"></i> Animated sequences</li>
+                        <li><i class="ri-water-flash-line"></i> Weatherproof design</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Imran%20Khan%20LED%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Imran Khan Light 3 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771407881225-c2805494-9a11-4aac-a42d-f8ea862ec096.jpeg" alt="Imran Khan Back Light">
+                    <h3>Deluxe Imran Khan Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Premium IK design</li>
+                        <li><i class="ri-color-filter-line"></i> Color changing effects</li>
+                        <li><i class="ri-movie-line"></i> Dynamic light patterns</li>
+                        <li><i class="ri-water-flash-line"></i> Fully waterproof</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Deluxe%20Imran%20Khan%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Moving AK47 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771407958615-e0bd4eb0-7aa6-4342-87f3-9591656bea98.jpeg" alt="Moving AK47 Light">
+                    <h3>Moving AK47 Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Moving AK47 animation in center</li>
+                        <li><i class="ri-color-filter-line"></i> Different lights around it</li>
+                        <li><i class="ri-movie-line"></i> Continuous animation effect</li>
+                        <li><i class="ri-collage-line"></i> Multi-zone lighting</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Moving%20AK47%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Wolf Shape -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771408100661-bd84cab1-10b7-40b4-acd3-6da8e0615c16.jpeg" alt="Wolf Back Light">
+                    <h3>Wolf Shape Back Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Wolf silhouette design</li>
+                        <li><i class="ri-color-filter-line"></i> Color changing effects</li>
+                        <li><i class="ri-movie-line"></i> Animated wolf eyes</li>
+                        <li><i class="ri-water-flash-line"></i> Durable construction</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Wolf%20Back%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mood Off Light -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771408160114-c5a858cf-1647-4855-af9f-44268d6c23b3.jpeg" alt="Mood Off Back Light">
+                    <h3>"Mood Off" Back Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Mood Off text design</li>
+                        <li><i class="ri-color-filter-line"></i> Color changing background</li>
+                        <li><i class="ri-movie-line"></i> Animated text effects</li>
+                        <li><i class="ri-water-flash-line"></i> Weather resistant</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Mood%20Off%20Back%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Eyes with Smile -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771408467113-31bf919e-e9cf-4c07-949e-a82c36986e84.jpeg" alt="Eyes with Smile Light">
+                    <h3>Eyes with Smile Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Smiling eyes design</li>
+                        <li><i class="ri-color-filter-line"></i> Multi-color blinking</li>
+                        <li><i class="ri-movie-line"></i> Happy animation effects</li>
+                        <li><i class="ri-water-flash-line"></i> Premium quality</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Eyes%20with%20Smile%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Rising Finger -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771408508940-55901105-f8fe-4442-a9fa-f46ba49677d1.jpeg" alt="Rising Finger Light">
+                    <h3>Central Rising Finger Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Central rising finger design</li>
+                        <li><i class="ri-color-filter-line"></i> Color changing effects</li>
+                        <li><i class="ri-movie-line"></i> Animated gesture</li>
+                        <li><i class="ri-water-flash-line"></i> Bold statement piece</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Rising%20Finger%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Barking Dog -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771408557143-1ba28cb0-be36-403c-b1d1-9421d7db0131.jpeg" alt="Barking Dog Light">
+                    <h3>Barking Dog Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Dog silhouette design</li>
+                        <li><i class="ri-color-filter-line"></i> Animated barking effect</li>
+                        <li><i class="ri-movie-line"></i> Moving mouth animation</li>
+                        <li><i class="ri-water-flash-line"></i> Unique design</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Barking%20Dog%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
                     </a>
                 </div>
             </div>
-            
+
+            <!-- Subcategory: Cover/Static Brake Lights -->
+            <div class="subcategory-header" style="margin-top: 50px;">
+                <h4>🎨 Designer Cover Brake Lights</h4>
+            </div>
+
+            <div class="catalog-grid">
+                <!-- Malik Cover -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771408261840-681bf1a4-b5c2-4602-b147-a8ba892e4503.jpeg" alt="Malik Cover Light">
+                    <h3>"Malik" Cover Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Malik text design</li>
+                        <li><i class="ri-color-filter-line"></i> Premium graphics</li>
+                        <li><i class="ri-water-flash-line"></i> High-quality print</li>
+                        <li><i class="ri-collage-line"></i> Eye-catching design</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Malik%20Cover%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Panga Nhe Lena -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771408333340-d1da24b1-1b04-47db-8549-e911524f7d1c.jpeg" alt="Panga Nhe Lena Cover">
+                    <h3>"Panga Nhe Lena" Cover</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Bold statement text</li>
+                        <li><i class="ri-color-filter-line"></i> Urdu typography design</li>
+                        <li><i class="ri-water-flash-line"></i> Durable print</li>
+                        <li><i class="ri-collage-line"></i> Attention grabber</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Panga%20Nhe%20Lena%20Cover" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Central Eyes Cover -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771408367288-58f860ea-3e2f-4987-8f5a-b65b49d42eb9.jpeg" alt="Central Eyes Cover">
+                    <h3>Central Eyes Cover</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Central eye design</li>
+                        <li><i class="ri-color-filter-line"></i> Mysterious look</li>
+                        <li><i class="ri-water-flash-line"></i> High-quality print</li>
+                        <li><i class="ri-collage-line"></i> Intense style</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Central%20Eyes%20Cover" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Swag Cover -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771408397446-7098896d-6755-40e0-9df5-634b8d65bf9e.jpeg" alt="Swag Cover">
+                    <h3>"Swag" Cover Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Swag typography</li>
+                        <li><i class="ri-color-filter-line"></i> Stylish font design</li>
+                        <li><i class="ri-water-flash-line"></i> Premium finish</li>
+                        <li><i class="ri-collage-line"></i> Modern look</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Swag%20Cover" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mood Off Cover -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771408433730-8bffb632-60ec-44f7-b8b4-c30428c0d44f.jpeg" alt="Mood Off Cover">
+                    <h3>"Mood Off" Cover</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Mood Off text</li>
+                        <li><i class="ri-color-filter-line"></i> Emotive design</li>
+                        <li><i class="ri-water-flash-line"></i> Weather resistant</li>
+                        <li><i class="ri-collage-line"></i> Popular choice</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Mood%20Off%20Cover" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- HEAD LIGHTS CATEGORY - UPDATED WITH NEW ITEMS -->
+            <div class="category-header" style="margin-top: 60px;">
+                <h3>💡 Head Lights</h3>
+                <span class="category-badge">Premium Quality</span>
+            </div>
+
+            <div class="catalog-grid">
+                <!-- New Skull Headlight with Displays -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771416956944-1f0b0452-d368-46dc-b7ca-4ae32d10547c.jpeg" alt="Skull Head Light with Display">
+                    <h3>Skull Head Light with Display</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Side LED displays</li>
+                        <li><i class="ri-laser-line"></i> Laser light in center</li>
+                        <li><i class="ri-collage-line"></i> Multiple display patterns</li>
+                        <li><i class="ri-water-flash-line"></i> Premium quality build</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Skull%20Head%20Light%20with%20Display" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- New Batman Light with Display -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771418004065-9aef44ec-aae5-43f9-9846-8b9ab1b07b67.jpeg" alt="Batman Head Light with Display">
+                    <h3>Batman Head Light with Display</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Strong LED lights</li>
+                        <li><i class="ri-collage-line"></i> Stylish side display</li>
+                        <li><i class="ri-movie-line"></i> Batman themed design</li>
+                        <li><i class="ri-water-flash-line"></i> High brightness output</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Batman%20Head%20Light%20with%20Display" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Stylish Eyes Light -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771418078102-d4a016de-3d82-4773-bad4-8cae1e238c5b.jpeg" alt="Stylish Eyes Head Light">
+                    <h3>Stylish Eyes Head Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Eye-shaped design</li>
+                        <li><i class="ri-color-filter-line"></i> Multiple color options</li>
+                        <li><i class="ri-movie-line"></i> Animated light patterns</li>
+                        <li><i class="ri-water-flash-line"></i> Weather resistant</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Stylish%20Eyes%20Head%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Simple Head Light -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771418119479-a8e58a15-aa8b-4460-8e8e-22c90a61d7b2.jpeg" alt="Simple Head Light">
+                    <h3>Simple Head Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Classic design</li>
+                        <li><i class="ri-color-filter-line"></i> Available in different colors</li>
+                        <li><i class="ri-water-flash-line"></i> Durable construction</li>
+                        <li><i class="ri-flashlight-line"></i> Bright illumination</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Simple%20Head%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- SIMPLE STYLISH LIGHTS CATEGORY -->
+            <div class="category-header" style="margin-top: 60px;">
+                <h3>✨ Simple Stylish Lights</h3>
+                <span class="category-badge">LED & Laser</span>
+            </div>
+
+            <div class="catalog-grid">
+                <!-- Two Eyes Fast Laser -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771418364720-3a31729e-9b58-4233-9cb5-ece05cecaf0a.jpeg" alt="Two Eyes Fast Laser Lights">
+                    <h3>Two Eyes Fast Laser Lights</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-laser-line"></i> Fast laser beam pattern</li>
+                        <li><i class="ri-flashlight-line"></i> Dual eye design</li>
+                        <li><i class="ri-color-filter-line"></i> Multi-color effect</li>
+                        <li><i class="ri-water-flash-line"></i> Weather resistant</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Two%20Eyes%20Fast%20Laser%20Lights" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Pair of Laser Lights -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771418452742-3f8eed3b-060d-458c-b3fc-1326b8596b82.jpeg" alt="Pair of Laser Lights">
+                    <h3>Pair of Laser Lights</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-laser-line"></i> Set of 2 laser lights</li>
+                        <li><i class="ri-flashlight-line"></i> High intensity beam</li>
+                        <li><i class="ri-color-filter-line"></i> Color options available</li>
+                        <li><i class="ri-water-flash-line"></i> Easy installation</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Pair%20of%20Laser%20Lights" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Single LED Spot Light -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771418485927-16755193-6ada-4cf8-9131-0b4c72e1355b.jpeg" alt="Single LED Spot Light">
+                    <h3>Single LED Spot Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Focused spot beam</li>
+                        <li><i class="ri-water-flash-line"></i> Waterproof design</li>
+                        <li><i class="ri-flashlight-line"></i> Energy efficient LED</li>
+                        <li><i class="ri-collage-line"></i> Compact size</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Single%20LED%20Spot%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Pair of LED Laser Type Light -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771418514659-b6bb3918-bee5-449c-ad81-e3f0d5c24e6b.jpeg" alt="Pair of LED Laser Type Light">
+                    <h3>Pair of LED Laser Type Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-laser-line"></i> Laser-style LED beam</li>
+                        <li><i class="ri-flashlight-line"></i> Set of 2 lights</li>
+                        <li><i class="ri-color-filter-line"></i> Multiple color options</li>
+                        <li><i class="ri-water-flash-line"></i> Weather resistant</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Pair%20of%20LED%20Laser%20Type%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Color Changing LED Light -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771418549670-8b9e1151-fd2c-493e-ad25-9cf35419504b.jpeg" alt="Color Changing LED Light">
+                    <h3>Color Changing LED Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-color-filter-line"></i> Multiple color modes</li>
+                        <li><i class="ri-flashlight-line"></i> Stylish design</li>
+                        <li><i class="ri-movie-line"></i> Automatic color change</li>
+                        <li><i class="ri-water-flash-line"></i> Waterproof casing</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Color%20Changing%20LED%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Multi-Color LED Light -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771418603293-d671a687-e939-4899-85a3-b40667d7d4aa.jpeg" alt="Multi-Color LED Light">
+                    <h3>Multi-Color LED Light</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-color-filter-line"></i> Different colors available</li>
+                        <li><i class="ri-flashlight-line"></i> Bright illumination</li>
+                        <li><i class="ri-water-flash-line"></i> Durable construction</li>
+                        <li><i class="ri-flashlight-line"></i> Energy efficient</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Multi-Color%20LED%20Light" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- SIDE INDICATORS CATEGORY -->
+            <div class="category-header" style="margin-top: 60px;">
+                <h3>⬅️➡️ Side Indicators</h3>
+                <span class="category-badge">Safety & Style</span>
+            </div>
+
+            <div class="catalog-grid">
+                <!-- Indicator 1 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771420622766-f159defc-0944-4bc5-95e9-a2fbf11b290b.jpeg" alt="Side Indicator Style 1">
+                    <h3>Premium Side Indicator</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Bright LED light</li>
+                        <li><i class="ri-water-flash-line"></i> Waterproof design</li>
+                        <li><i class="ri-collage-line"></i> Stylish appearance</li>
+                        <li><i class="ri-flashlight-line"></i> Easy installation</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Premium%20Side%20Indicator" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Indicator 2 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771420648456-7787897e-7d29-4f73-8a60-e9ba6a6ebf07.jpeg" alt="Side Indicator Style 2">
+                    <h3>LED Side Indicator</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> High brightness LED</li>
+                        <li><i class="ri-water-flash-line"></i> Weather resistant</li>
+                        <li><i class="ri-collage-line"></i> Modern design</li>
+                        <li><i class="ri-flashlight-line"></i> Long lasting</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20LED%20Side%20Indicator" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Indicator 3 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771420681850-39d3b916-2897-4c88-9ebc-f523f828d750.jpeg" alt="Side Indicator Style 3">
+                    <h3>Stylish Side Indicator</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Unique design</li>
+                        <li><i class="ri-color-filter-line"></i> Color options available</li>
+                        <li><i class="ri-water-flash-line"></i> Dust & water proof</li>
+                        <li><i class="ri-flashlight-line"></i> Universal fit</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Stylish%20Side%20Indicator" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Indicator 4 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771420708764-1142eb76-7da8-4d95-a1aa-a157ceb0b0c1.jpeg" alt="Side Indicator Style 4">
+                    <h3>Chrome Side Indicator</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Chrome finish</li>
+                        <li><i class="ri-flashlight-line"></i> Bright amber light</li>
+                        <li><i class="ri-water-flash-line"></i> Weatherproof</li>
+                        <li><i class="ri-collage-line"></i> Premium look</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Chrome%20Side%20Indicator" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Indicator 5 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771420730627-337292be-4f75-4cea-b890-8a29a15f9fb7.jpeg" alt="Side Indicator Style 5">
+                    <h3>Sporty Side Indicator</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Sporty design</li>
+                        <li><i class="ri-flashlight-line"></i> High visibility</li>
+                        <li><i class="ri-water-flash-line"></i> Shock resistant</li>
+                        <li><i class="ri-collage-line"></i> Easy to install</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Sporty%20Side%20Indicator" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- PETROL TANKS CATEGORY -->
+            <div class="category-header" style="margin-top: 60px;">
+                <h3>⛽ Petrol Tanks</h3>
+                <span class="category-badge">Various Models</span>
+            </div>
+
+            <div class="catalog-grid">
+                <!-- Tank 1 - Black 125 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771420968554-294fe081-8e33-4ddb-9482-f0b3dd6165ad.jpeg" alt="Black 125 Petrol Tank">
+                    <h3>Black 125 Petrol Tank</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> For 125cc bikes</li>
+                        <li><i class="ri-color-filter-line"></i> Black color finish</li>
+                        <li><i class="ri-collage-line"></i> Original quality</li>
+                        <li><i class="ri-water-flash-line"></i> Rust resistant</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Black%20125%20Petrol%20Tank" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Tank 2 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771421006889-91eb30c4-d23e-45d8-9a2d-67979fa7691f.jpeg" alt="Petrol Tank Style 2">
+                    <h3>Premium Petrol Tank</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> High quality metal</li>
+                        <li><i class="ri-collage-line"></i> Perfect fit</li>
+                        <li><i class="ri-water-flash-line"></i> Leak proof</li>
+                        <li><i class="ri-color-filter-line"></i> Original paint</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Premium%20Petrol%20Tank" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Tank 3 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771421030852-cc425c26-0e25-4b4b-8381-7c56fb7e668e.jpeg" alt="Petrol Tank Style 3">
+                    <h3>Deluxe Petrol Tank</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Deluxe finish</li>
+                        <li><i class="ri-collage-line"></i> Durable construction</li>
+                        <li><i class="ri-water-flash-line"></i> Rust proof coating</li>
+                        <li><i class="ri-flashlight-line"></i> Easy installation</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Deluxe%20Petrol%20Tank" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Tank 4 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771421051612-958c18aa-a3ec-47ce-b01b-d94f9acb5636.jpeg" alt="Petrol Tank Style 4">
+                    <h3>Classic Petrol Tank</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Classic design</li>
+                        <li><i class="ri-color-filter-line"></i> Original color</li>
+                        <li><i class="ri-collage-line"></i> Perfect for restoration</li>
+                        <li><i class="ri-water-flash-line"></i> High quality</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Classic%20Petrol%20Tank" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Tank 5 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771421074796-1cba072a-6a3f-47ee-bf23-0f7fc5463334.jpeg" alt="Petrol Tank Style 5">
+                    <h3>Sport Petrol Tank</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Sporty design</li>
+                        <li><i class="ri-collage-line"></i> Aerodynamic shape</li>
+                        <li><i class="ri-water-flash-line"></i> Premium finish</li>
+                        <li><i class="ri-color-filter-line"></i> Multiple color options</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Sport%20Petrol%20Tank" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- SIDE COVERS CATEGORY -->
+            <div class="category-header" style="margin-top: 60px;">
+                <h3>🛡️ Side Covers</h3>
+                <span class="category-badge">Custom Designs</span>
+            </div>
+
+            <div class="catalog-grid">
+                <!-- Eagle Print -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771423297929-34c3ab24-caba-4265-9369-7832d64e4ca3.jpeg" alt="Eagle Print Side Cover">
+                    <h3>Eagle Print Side Cover</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Eagle graphic design</li>
+                        <li><i class="ri-color-filter-line"></i> High quality print</li>
+                        <li><i class="ri-water-flash-line"></i> Weather resistant</li>
+                        <li><i class="ri-collage-line"></i> Perfect fit</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Eagle%20Print%20Side%20Cover" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Side Cover 2 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771423386167-69596666-975d-42bb-b036-eafbb77dd2b1.jpeg" alt="Designer Side Cover">
+                    <h3>Designer Side Cover</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Unique design</li>
+                        <li><i class="ri-color-filter-line"></i> Premium quality</li>
+                        <li><i class="ri-water-flash-line"></i> UV protected</li>
+                        <li><i class="ri-collage-line"></i> Durable material</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Designer%20Side%20Cover" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Custom Picture Printing -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771423417953-54584901-f9b1-4dd7-bfbd-e5aa2b3812ac.jpeg" alt="Custom Picture Side Cover">
+                    <h3>Custom Picture Printing</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Print your own picture</li>
+                        <li><i class="ri-color-filter-line"></i> High resolution print</li>
+                        <li><i class="ri-water-flash-line"></i> Fade resistant</li>
+                        <li><i class="ri-collage-line"></i> Personalized design</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Custom%20Picture%20Side%20Cover" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Marwat Print -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771423499331-db818652-0dc9-401f-8e84-5c9dcae018e2.jpeg" alt="Marwat Print Side Cover">
+                    <h3>Marwat Print Side Cover</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Marwat text design</li>
+                        <li><i class="ri-color-filter-line"></i> Bold typography</li>
+                        <li><i class="ri-water-flash-line"></i> Quality print</li>
+                        <li><i class="ri-collage-line"></i> Identity statement</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Marwat%20Print%20Side%20Cover" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Sidhu Musa Wala -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771423530798-311f8c3c-991e-4d64-9188-9bcff2b3c9a3.jpeg" alt="Sidhu Musa Wala Side Cover">
+                    <h3>Sidhu Musa Wala Print</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Sidhu design</li>
+                        <li><i class="ri-color-filter-line"></i> Celebrity theme</li>
+                        <li><i class="ri-water-flash-line"></i> High quality print</li>
+                        <li><i class="ri-collage-line"></i> Fan favorite</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Sidhu%20Musa%20Wala%20Side%20Cover" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- OTHER ACCESSORIES CATEGORY -->
+            <div class="category-header" style="margin-top: 60px;">
+                <h3>🔧 Other Accessories</h3>
+                <span class="category-badge">Everything Else</span>
+            </div>
+
+            <div class="catalog-grid">
+                <!-- Color Spray -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771423822592-a16ff1f7-37be-4983-ba19-ec6616c8c24c.jpeg" alt="Color Spray for Bikes">
+                    <h3>Color Spray for Bikes</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-color-filter-line"></i> Different colors available</li>
+                        <li><i class="ri-water-flash-line"></i> Quick drying</li>
+                        <li><i class="ri-flashlight-line"></i> Easy to apply</li>
+                        <li><i class="ri-collage-line"></i> Long lasting finish</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Color%20Spray%20for%20Bikes" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Stylish 125 Seat -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771423898870-4167ea64-1db4-4a1f-a10c-1f24da39f284.jpeg" alt="Stylish 125 Seat">
+                    <h3>Stylish 125 Seat</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> For 125cc bikes</li>
+                        <li><i class="ri-collage-line"></i> Comfortable foam</li>
+                        <li><i class="ri-water-flash-line"></i> Waterproof cover</li>
+                        <li><i class="ri-color-filter-line"></i> Stylish design</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Stylish%20125%20Seat" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Stylish Seat -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771423959529-83bd1884-7cb6-4b43-89bb-2b9f5fb55771.jpeg" alt="Stylish Seat">
+                    <h3>Stylish Seat</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Universal fit</li>
+                        <li><i class="ri-collage-line"></i> Premium comfort</li>
+                        <li><i class="ri-water-flash-line"></i> Weather resistant</li>
+                        <li><i class="ri-color-filter-line"></i> Multiple colors</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Stylish%20Seat" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Colored Seat for All Bikes -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771424009518-b973b6de-8169-4d99-b928-66cd2e5e184d.jpeg" alt="Colored Seat for All Bikes">
+                    <h3>Colored Seat for All Bikes</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-color-filter-line"></i> Vibrant colors</li>
+                        <li><i class="ri-flashlight-line"></i> Fits all bike types</li>
+                        <li><i class="ri-water-flash-line"></i> Durable material</li>
+                        <li><i class="ri-collage-line"></i> Easy installation</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Colored%20Seat%20for%20All%20Bikes" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mobile Oil -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771424088748-26a5680c-58a7-4bbb-a702-72b764b964f5.jpeg" alt="Mobile Oil">
+                    <h3>Mobile Oil</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> For all bike types</li>
+                        <li><i class="ri-water-flash-line"></i> Engine protection</li>
+                        <li><i class="ri-flashlight-line"></i> Smooth performance</li>
+                        <li><i class="ri-collage-line"></i> Premium quality</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Mobile%20Oil" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Self Made Engine Cover -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771424178614-4112b6e1-dc3f-445a-9260-d30ef62c7f9c.jpeg" alt="Stylish Engine Cover">
+                    <h3>Stylish Engine Cover</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Self made design</li>
+                        <li><i class="ri-collage-line"></i> Custom fit</li>
+                        <li><i class="ri-water-flash-line"></i> Durable material</li>
+                        <li><i class="ri-color-filter-line"></i> Stylish look</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Stylish%20Engine%20Cover" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Self Made Chain Cover -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771424219474-1c1dd1ff-9bc9-4740-be4d-ba143745673e.jpeg" alt="Stylish Chain Cover">
+                    <h3>Stylish Chain Cover</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Self made design</li>
+                        <li><i class="ri-collage-line"></i> Perfect protection</li>
+                        <li><i class="ri-water-flash-line"></i> Weather resistant</li>
+                        <li><i class="ri-color-filter-line"></i> Stylish appearance</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Stylish%20Chain%20Cover" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Flame Beater -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771427413455-87e94c02-1fe7-4c74-b8d9-4d43067593e1.jpeg" alt="Flame Beater">
+                    <h3>Flame Beater</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Fire protection</li>
+                        <li><i class="ri-water-flash-line"></i> Safety equipment</li>
+                        <li><i class="ri-flashlight-line"></i> Easy to use</li>
+                        <li><i class="ri-collage-line"></i> Essential safety</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Flame%20Beater" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Cleaner Spray -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771427508752-c36faeb5-673d-4705-9657-301f473fc8a1.jpeg" alt="Cleaner Spray">
+                    <h3>Cleaner Spray</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Bike cleaning</li>
+                        <li><i class="ri-water-flash-line"></i> Removes dirt</li>
+                        <li><i class="ri-flashlight-line"></i> Safe for paint</li>
+                        <li><i class="ri-collage-line"></i> Quick action</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Cleaner%20Spray" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Engine Cleaner Spray -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771427557603-f71a68cd-8a1d-46ed-bf87-8a58959ef636.jpeg" alt="Engine Cleaner Spray">
+                    <h3>Engine Cleaner Spray</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> For engine cleaning</li>
+                        <li><i class="ri-water-flash-line"></i> Degreasing formula</li>
+                        <li><i class="ri-flashlight-line"></i> Safe for parts</li>
+                        <li><i class="ri-collage-line"></i> Professional grade</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Engine%20Cleaner%20Spray" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Bike Stands -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771427629347-eae7bdba-8af9-4919-a233-555c820c5d8a.jpeg" alt="Bike Stands">
+                    <h3>Bike Stands</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> For all bikes</li>
+                        <li><i class="ri-collage-line"></i> Sturdy construction</li>
+                        <li><i class="ri-water-flash-line"></i> Rust resistant</li>
+                        <li><i class="ri-flashlight-line"></i> Easy installation</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Bike%20Stands" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- WHISTLER SILENCERS CATEGORY -->
+            <div class="category-header" style="margin-top: 60px;">
+                <h3>🎵 Whistler Silencers</h3>
+                <span class="category-badge">Sound & Style</span>
+            </div>
+
+            <div class="catalog-grid">
+                <!-- Silencer 1 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771427758630-1d9c02d0-c103-43e4-8fee-d706da484db0.jpeg" alt="Whistler Silencer Style 1">
+                    <h3>Whistler Silencer - Style 1</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Unique whistling sound</li>
+                        <li><i class="ri-collage-line"></i> Premium build quality</li>
+                        <li><i class="ri-water-flash-line"></i> Rust resistant</li>
+                        <li><i class="ri-flashlight-line"></i> Easy installation</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Whistler%20Silencer%20Style%201" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Silencer 2 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771427859664-3bb4faec-4c15-4f54-864b-ac568ae35f92.jpeg" alt="Whistler Silencer Style 2">
+                    <h3>Whistler Silencer - Style 2</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Distinctive sound</li>
+                        <li><i class="ri-collage-line"></i> Chrome finish</li>
+                        <li><i class="ri-water-flash-line"></i> Durable material</li>
+                        <li><i class="ri-flashlight-line"></i> Performance boost</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Whistler%20Silencer%20Style%202" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Silencer 3 -->
+                <div class="catalog-item">
+                    <img src="https://image2url.com/r2/default/images/1771427891468-c733b66a-fbed-4f87-962a-e4d0c2ee9669.jpeg" alt="Whistler Silencer Style 3">
+                    <h3>Whistler Silencer - Style 3</h3>
+                    <ul class="features-list">
+                        <li><i class="ri-flashlight-line"></i> Sporty sound</li>
+                        <li><i class="ri-collage-line"></i> Stylish design</li>
+                        <li><i class="ri-water-flash-line"></i> Weather resistant</li>
+                        <li><i class="ri-flashlight-line"></i> Perfect fit</li>
+                    </ul>
+                    <a href="https://wa.me/923165356379?text=I'm%20interested%20in%20the%20Whistler%20Silencer%20Style%203" class="btn btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Inquiry on WhatsApp
+                    </a>
+                </div>
+            </div>
+
             <!-- VIEW MORE BUTTON -->
-            <div style="text-align: center; margin-top: 50px;">
+            <div style="text-align: center; margin-top: 60px;">
                 <a href="https://wa.me/923165356379?text=Hello%20Marwat%20Autos,%20I%20want%20to%20see%20more%20items%20for%20sale" 
                    class="btn" 
                    style="padding: 15px 40px; font-size: 1.1rem;">
-                    <i class="ri-whatsapp-line"></i> View All Items on WhatsApp
+                    <i class="ri-whatsapp-line"></i> Contact Us for More Items
                 </a>
                 <p style="margin-top: 15px; color: var(--gray);">
-                    We have many more items! WhatsApp us for complete catalog
+                    We have many more designs! WhatsApp us for complete catalog
                 </p>
             </div>
         </div>
@@ -1230,7 +1853,7 @@
                     <i class="ri-whatsapp-line contact-icon-large whatsapp-icon"></i>
                     <h3>WhatsApp</h3>
                     <p style="margin: 15px 0; color: var(--gray);">Fastest response - Chat directly</p>
-                    <a href="https://wa.me/923165356379?text=Hello%20Marwat%20Autos,%20I%20need%20information%20about%20bike%20services" 
+                    <a href="https://wa.me/923165356379?text=Hello%20Marwat%20Autos,%20I%20need%20information%20about%20your%20premium%20bike%20lights" 
                        class="btn btn-whatsapp" 
                        target="_blank"
                        style="display: flex; align-items: center; justify-content: center; gap: 8px;">
@@ -1257,11 +1880,11 @@
                     <i class="ri-mail-line contact-icon-large email-icon"></i>
                     <h3>Email</h3>
                     <p style="margin: 15px 0; color: var(--gray);">Send detailed inquiries to our email</p>
-                    <button onclick="sendEmail()" 
-                            class="btn btn-email"
-                            style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <a href="mailto:saadatmarwat126@gmail.com?subject=Inquiry%20About%20Bike%20Lights&body=Hello%20Marwat%20Autos%2C%20I'm%20interested%20in%20your%20products." 
+                       class="btn btn-email"
+                       style="display: flex; align-items: center; justify-content: center; gap: 8px;">
                         <i class="ri-mail-line"></i> Send Email
-                    </button>
+                    </a>
                     <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">saadatmarwat126@gmail.com</p>
                 </div>
             </div>
@@ -1311,14 +1934,15 @@
                         </div>
                     </div>
                     
+                    <!-- SOCIAL LINKS WITH FACEBOOK AND TIKTOK ADDED -->
                     <div class="social-links">
-                        <a href="#" class="social-link">
+                        <a href="https://www.facebook.com/profile.php?id=61588208524788" class="social-link" target="_blank" title="Facebook">
                             <i class="ri-facebook-fill"></i>
                         </a>
-                        <a href="#" class="social-link">
-                            <i class="ri-instagram-line"></i>
+                        <a href="https://www.tiktok.com/@marwat.autos" class="social-link" target="_blank" title="TikTok">
+                            <i class="ri-tiktok-fill"></i>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="https://wa.me/923165356379" class="social-link" target="_blank" title="WhatsApp">
                             <i class="ri-whatsapp-line"></i>
                         </a>
                     </div>
@@ -1326,18 +1950,18 @@
                 
                 <div class="contact-form">
                     <h3>Send Us a Message</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" action="mailto:saadatmarwat126@gmail.com" method="post" enctype="text/plain">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="0316-XXXXXXX" required>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="0316-XXXXXXX" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" class="form-control" placeholder="Tell us about your bike customization or spare parts needs..." required></textarea>
+                            <textarea id="message" name="message" class="form-control" placeholder="Tell us which item you're interested in..." required></textarea>
                         </div>
                         <button type="submit" class="btn" style="width: 100%;">Send Message</button>
                         
@@ -1349,3 +1973,93 @@
             </div>
         </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Marwat <span>Autos</span></div>
+                    <p>Your premier destination for unique bike lights and accessories in Dera Ismail Khan. Quality products, expert service, and customer satisfaction guaranteed.</p>
+                    <!-- Social links in footer -->
+                    <div class="social-links" style="margin-top: 15px; justify-content: flex-start;">
+                        <a href="https://www.facebook.com/profile.php?id=61588208524788" class="social-link" target="_blank" style="background: rgba(255,255,255,0.1); color: white;">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@marwat.autos" class="social-link" target="_blank" style="background: rgba(255,255,255,0.1); color: white;">
+                            <i class="ri-tiktok-fill"></i>
+                        </a>
+                        <a href="https://wa.me/923165356379" class="social-link" target="_blank" style="background: rgba(255,255,255,0.1); color: white;">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#catalog">Items for Sale</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="ri-phone-line"></i> 0316-5356379</p>
+                    <p><i class="ri-whatsapp-line"></i> WhatsApp: Same number</p>
+                    <p><i class="ri-mail-line"></i> saadatmarwat126@gmail.com</p>
+                    <p><i class="ri-map-pin-line"></i> Dera Ismail Khan, Pakistan</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Marwat Autos. All rights reserved. | Dera Ismail Khan's Premium Bike Shop</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">Follow us on <a href="https://www.facebook.com/profile.php?id=61588208524788" style="color: var(--secondary);">Facebook</a> and <a href="https://www.tiktok.com/@marwat.autos" style="color: var(--secondary);">TikTok</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('nav');
+        
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
